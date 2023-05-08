@@ -1,0 +1,139 @@
+.container-dashboard{
+    margin-left: 20%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 75%;
+    float: right;
+}
+.data-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1em;
+    justify-content: center;
+}
+.card{
+    margin: 1em;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #461ee7 0%, #ba49ff 100%);;
+    color: #fff;
+    font-size: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.card:nth-child(2n){
+    background: linear-gradient(to right, rgb(127, 0, 255), rgb(225, 0, 255));
+}
+.container-overview,
+.graphic,
+.income, 
+.progress-bar,
+.transactions{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em;
+    padding: 1em;
+    background-color: #d6d6d6;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 10px #7e7d7d;
+   
+}
+.data-balance{
+    padding: 2em 5em;
+    background-color: #3b00bb;
+    color: #fff;
+    border-radius: 2rem;
+}
+.graphic{
+    display: flex;
+    margin: 0 1em;
+    padding: 2em;
+    color: #7e7d7d;
+    font-size: 0.8rem;
+} 
+.illustration {
+    max-width: 18rem;
+}
+.income ul{
+    list-style: none;
+}
+.bullet{
+    border-radius: 20px;
+    background-color: #3b00bb;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+.transactions{
+    flex-direction: column;
+}
+.all-transactions{
+    width: 100%;
+}
+.header-transactions ul li {
+    display: inline-block;
+    margin: 0.5em;
+}
+.line-transaction{
+    justify-content: space-around;
+    display: flex;
+    border-bottom: 1px solid #fff;
+    margin: 1em;
+}
+.line-transaction div{
+    justify-content: flex-start;
+    padding: 0 0.8rem;
+}
+
+
+@media(max-width:768px){
+    .container-dashboard{
+        left: 0;
+        float: none;
+        margin: auto;
+        max-width: 100%;
+    }
+    .data-cards{
+        margin: 4em 0 0;
+    }
+    .card{
+        margin: 0.5em;
+        width: 100%;
+    }
+    .container-overview,
+    .graphic,
+    .income, 
+    .progress-bar,
+    .transactions,
+    .data-balance,
+    .line-transaction {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .data-balance{
+        padding: 1em;
+    }
+    .graphic svg{
+        max-width: 70%;
+    }
+    .line-transaction{
+        margin: 1em 0;
+            
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1200px){
+    .container-dashboard{
+        margin-left: 350px;
+    }
+}
