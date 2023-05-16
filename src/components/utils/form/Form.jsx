@@ -12,7 +12,7 @@ const Form = (props) => {
   
   const [dataState, dispatch] = useContext(BalanceContext)
   const category = props.category
-
+  console.log(category)
   function handleChangeValues (event) {
     
     /* const fieldName = event.target.name;
